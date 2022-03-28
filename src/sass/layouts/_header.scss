@@ -1,5 +1,9 @@
 .header {
   padding-top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
 }
 
 .header__logo {

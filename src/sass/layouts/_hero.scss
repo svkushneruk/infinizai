@@ -1,0 +1,126 @@
+.hero-section {
+  background-image: linear-gradient(to right, var(--black-color) 55%, #57b8ff 55%);
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  position: relative;
+  flex-basis: 56%;
+  padding-top: 297px;
+  padding-bottom: 250px;
+  padding-right: 85px;
+}
+
+.hero__label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.hero__text-label {
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--hero-title-color);
+}
+
+.hero__title {
+  position: relative;
+  font-size: 72px;
+  line-height: 1.19;
+  text-transform: capitalize;
+  color: var(--white-color);
+  margin-bottom: 45px;
+}
+
+.hero__icon-title {
+  position: absolute;
+  right: 0;
+  top: 160px;
+}
+
+.hero__text {
+  width: 95%;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--hero-text-color);
+  margin-bottom: 53px;
+}
+
+/**/
+
+.hero-img-content {
+  flex-basis: 44%;
+}
+
+.hero__list {
+}
+
+.hero-links {
+  display: flex;
+  align-items: center;
+}
+
+.hero-links__item {
+  margin-right: 6px;
+}
+
+.hero-links__link {
+  display: block;
+  padding: 21px 34px;
+  font-size: 18px;
+  line-height: 1.56;
+  text-transform: capitalize;
+  background-color: var(--hero-title-color);
+  border: 1px solid var(--hero-title-color);
+  transition: background-color, border, color 0.25s linear;
+  &:hover,
+  &:active {
+    background-color: var(--hero-title-color-hover);
+    border: 1px solid var(--hero-title-color);
+  }
+  &-transparent {
+    background-color: transparent;
+    border: 1px solid transparent;
+    &:hover,
+    &:active {
+      background-color: transparent;
+      border: 1px solid var(--hero-title-color-hover);
+      color: var(--hero-title-color);
+    }
+  }
+}
+
+.hero__social {
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 510px;
+  left: -165px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-list__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.social-list__link {
+  font-size: 10px;
+  line-height: 2.5;
+  text-transform: uppercase;
+  color: var(--social-list-link-color);
+}
+
+.hero-img-content__img {
+  position: relative;
+  left: -60px;
+}

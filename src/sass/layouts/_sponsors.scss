@@ -1,0 +1,61 @@
+.sponsors-section {
+  padding-top: 128px;
+  padding-bottom: 129px;
+  background-color: var(--sponsors-section-color);
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsors__title {
+  margin-bottom: 44px;
+}
+
+.sponsors__text {
+  width: 578px;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.sponsors-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -33px;
+  margin-top: -33px;
+  color: var(--basket-count-color);
+  font-weight: 700;
+}
+
+.sponsors-list__item {
+  flex-basis: calc(100% / 6 - 33px);
+  margin-left: 33px;
+  margin-top: 33px;
+  padding: 10.79px 10.82px;
+  background-color: var(--sponsors-item-bg-color);
+  border-radius: 15px;
+  transition: transform 0.25s linear;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.sponsors-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16.18px;
+  padding-bottom: 16.18px;
+  background-color: var(--sponsors-link-bg-color);
+  border-radius: 15px;
+}
+
+.sponsors-list__icon {
+  margin-right: 4px;
+}
