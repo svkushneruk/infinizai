@@ -1,0 +1,25 @@
+.customize-section {
+}
+
+.customize {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customize-content {
+  width: 596px;
+}
+
+.customize-content__label {
+  margin-bottom: 22px;
+}
+
+.customize-content__title {
+  text-align: left;
+  margin-bottom: 38px;
+}
+
+.customize-content__text {
+  color: var(--benefits-text-color);
+}

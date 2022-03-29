@@ -1,0 +1,45 @@
+.perspective-section {
+  padding-top: 130.42px;
+  padding-bottom: 129.58px;
+}
+
+.perspective {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.perspective-content {
+  width: 730px;
+}
+
+.perspective-content__label {
+  margin-bottom: 22px;
+}
+
+.perspective__title {
+  width: 684px;
+  text-align: left;
+  margin-bottom: 38px;
+}
+
+.perspective__text {
+  color: var(--benefits-text-color);
+  margin-bottom: 54px;
+}
+
+.perspective__link {
+  display: inline-block;
+  padding: 21px 34px;
+  font-size: 18px;
+  line-height: 1.56;
+  text-transform: capitalize;
+  background-color: var(--hero-title-color);
+  border: 1px solid var(--hero-title-color);
+  transition: background-color, border, color 0.25s linear;
+  &:hover,
+  &:active {
+    background-color: var(--hero-title-color-hover);
+    border: 1px solid var(--hero-title-color);
+  }
+}

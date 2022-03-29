@@ -1,9 +1,20 @@
 .section-title {
-  font-size: 48px;
-  line-height: 1.21;
+  font-size: 64px;
+  line-height: 1.16;
   font-weight: 400;
   text-align: center;
   text-transform: capitalize;
 
-  color: var(--section-title-color);
+  color: var(--white-color);
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  &__text {
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--hero-title-color);
+  }
 }
