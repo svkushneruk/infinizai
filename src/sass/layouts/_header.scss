@@ -56,18 +56,18 @@
   background-color: transparent;
   border: none;
   transition: color 0.25s linear;
-  &:hover,
-  &:active {
-    color: var(--nav-link-hover-color);
-  }
+  // &:hover,
+  // &:active {
+  //   color: var(--nav-link-hover-color);
+  // }
 }
 
-.basket__icon {
-  .basket:hover &,
-  .basket:active & {
-    stroke: var(--nav-link-hover-color);
-  }
-}
+// .basket__icon {
+//   .basket:hover &,
+//   .basket:active & {
+//     stroke: var(--nav-link-hover-color);
+//   }
+// }
 
 .basket__count {
   position: absolute;
@@ -81,11 +81,11 @@
   line-height: 1.63;
   text-align: center;
   color: var(--basket-count-color);
-  .basket:hover &,
-  .basket:active & {
-    color: var(--nav-link-hover-color);
-    font-weight: 700;
-  }
+  // .basket:hover &,
+  // .basket:active & {
+  //   color: var(--nav-link-hover-color);
+  //   font-weight: 700;
+  // }
 }
 
 .contacts__btn {
