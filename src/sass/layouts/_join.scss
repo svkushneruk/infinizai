@@ -1,0 +1,76 @@
+.section-join {
+  background-color: var(--sponsors-section-color);
+}
+
+.join {
+  padding-top: 129.61px;
+  padding-bottom: 130.39px;
+  background-image: url(../images/join-bg.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join__title {
+  position: relative;
+  width: 800px;
+  font-size: 72px;
+  line-height: 1.14;
+  text-align: center;
+
+  color: var(--basket-count-color);
+  margin-bottom: 49px;
+}
+
+.join__icon-title {
+  position: absolute;
+  bottom: -20px;
+  right: 25px;
+  stroke: var(--hero-title-color);
+}
+
+.join__text {
+  width: 850px;
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+
+  color: var(--text-color);
+
+  margin-bottom: 44.61px;
+}
+
+.join-form {
+  display: flex;
+  align-items: center;
+}
+
+.join-form__input {
+  padding: 26px 13px;
+  width: 445px;
+  border: 3px solid transparent;
+  &:focus {
+    border: 3px solid var(--black-color);
+  }
+  &::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--text-color);
+  }
+}
+
+.join-form__btn {
+  padding: 21px 34px;
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+  border: 1px solid transparent;
+  background-color: var(--hero-title-color);
+  color: var(--white-color);
+  &:hover,
+  &:active {
+    background-color: var(--hero-title-color-hover);
+    border: 1px solid var(--hero-title-color);
+  }
+}

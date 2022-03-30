@@ -1,0 +1,37 @@
+.cards-section {
+  & .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.cards-list {
+  display: flex;
+}
+
+.cards-list__item {
+  flex-basis: 33.3333%;
+}
+
+.cards-list__link {
+  position: relative;
+  display: block;
+}
+
+.cards-list__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 48px;
+  line-height: 1.21;
+  text-align: center;
+  text-transform: capitalize;
+}
+.cards-list__icon {
+  margin-bottom: 30px;
+}
