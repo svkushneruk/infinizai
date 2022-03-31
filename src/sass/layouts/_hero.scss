@@ -1,53 +1,75 @@
 .hero-section {
-  background-image: linear-gradient(to right, var(--black-color) 55%, #57b8ff 55%);
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(to right, var(--black-color) 55%, #57b8ff 55%);
+  }
 }
 
 .hero-container {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 479px) {
+    flex-direction: column;
+  }
 }
 
 .hero {
   position: relative;
-  flex-basis: 56%;
-  padding-top: 297px;
-  padding-bottom: 250px;
-  padding-right: 85px;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    flex-basis: 56%;
+    padding-top: 297px;
+    padding-bottom: 250px;
+    padding-right: 85px;
+  }
 }
 
 .hero__label {
-  margin-bottom: 26px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 26px;
+  }
 }
 
 .hero__title {
   position: relative;
-  font-size: 72px;
+  font-size: 36px;
   line-height: 1.19;
   text-transform: capitalize;
   color: var(--white-color);
-  margin-bottom: 45px;
+  margin-bottom: 25px;
+  @media screen and (min-width: 480px) {
+    font-size: 72px;
+    margin-bottom: 45px;
+  }
 }
 
 .hero__icon-title {
   position: absolute;
-  right: 0;
-  top: 160px;
+  top: 118px;
+  right: -70px;
   stroke: #fdd048;
+  transform: scale(0.6);
+  @media screen and (min-width: 480px) {
+    transform: scale(1);
+    top: 160px;
+    right: 0;
+  }
 }
 
 .hero__text {
   width: 95%;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.56;
   color: var(--hero-text-color);
-  margin-bottom: 53px;
+  margin-bottom: 25px;
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    margin-bottom: 53px;
+  }
 }
 
 /**/
-
-.hero-img-content {
-  flex-basis: 44%;
-}
 
 .hero__list {
 }
@@ -55,6 +77,10 @@
 .hero-links {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 480px) {
+    flex-direction: row;
+  }
 }
 
 .hero-links__item {
@@ -88,15 +114,20 @@
 }
 
 .hero__social {
-  transform: rotate(-90deg);
-  position: absolute;
-  bottom: 510px;
-  left: -165px;
+  @media screen and (min-width: 480px) {
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 510px;
+    left: -165px;
+  }
 }
 
 .social-list {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 479px) {
+    justify-content: space-between;
+  }
 }
 
 .social-list__item {
@@ -112,7 +143,15 @@
   color: var(--social-list-link-color);
 }
 
+.hero-img-content {
+  @media screen and (min-width: 480px) {
+    flex-basis: 44%;
+  }
+}
+
 .hero-img-content__img {
-  position: relative;
-  left: -60px;
+  @media screen and (min-width: 480px) {
+    position: relative;
+    left: -60px;
+  }
 }
