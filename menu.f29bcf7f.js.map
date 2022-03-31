@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/menu.js"],"names":["menuBtn","document","querySelector","navigation"],"mappings":";AAAA,MAAMA,EAAUC,SAASC,cAAc,SACjCC,EAAaF,SAASC,cAAc","file":"menu.f29bcf7f.js","sourceRoot":"../src","sourcesContent":["const menuBtn = document.querySelector('.menu');\nconst navigation = document.querySelector('.navigation')"]}
