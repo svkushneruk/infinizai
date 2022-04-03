@@ -61,4 +61,10 @@
     background-color: var(--hero-title-color-hover);
     border: 1px solid var(--hero-title-color);
   }
+  @media screen and(max-width: 467px) {
+    display: block;
+    margin: 0 auto;
+    width: 220px;
+    text-align: center;
+  }
 }

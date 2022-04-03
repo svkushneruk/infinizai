@@ -1,37 +1,67 @@
 .footer {
-  padding-top: 129.61px;
+  padding-top: 34px;
   background-color: var(--footer-bg-color);
+  @media screen and(min-width: 468px) {
+    padding-top: 130px;
+  }
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-
+  flex-direction: column;
   color: var(--hero-text-color);
-  margin-bottom: 49px;
+  margin-bottom: 25px;
+  @media screen and(min-width: 468px) {
+    flex-direction: row;
+    margin-bottom: 49px;
+  }
 }
 
 .footer-content__item {
-  width: 285px;
+  @media screen and(min-width: 468px) {
+    width: 285px;
+  }
+  @media screen and(max-width: 467px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  &:not(:last-child) {
+    @media screen and(max-width: 467px) {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .footer__logo {
   display: inline-block;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
+  @media screen and(min-width: 468px) {
+    margin-bottom: 35px;
+  }
 }
 
 .footer-content__text {
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.67;
+  @media screen and(min-width: 468px) {
+    font-size: 15px;
+  }
 }
 
 .menu-title {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.67;
   font-weight: 400;
   text-transform: capitalize;
   color: var(--white-color);
-  margin-bottom: 24px;
+  margin-bottom: 12px;
+  @media screen and(min-width: 468px) {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
 }
 
 .menu-list__item {
@@ -42,21 +72,31 @@
 
 .menu-list__link {
   display: block;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 2.5;
   transition: color 0.25s linear;
   &:hover,
   &:focus {
     color: var(--nav-link-hover-color);
   }
+  @media screen and(min-width: 468px) {
+    font-size: 15px;
+  }
 }
 
+.footer-content__social {
+  @media screen and(max-width: 467px) {
+    text-align: center;
+  }
+}
 .footer .social-list {
-  width: 240px;
   display: flex;
   flex-wrap: wrap;
   margin-top: -16px;
   margin-left: -16px;
+  @media screen and(min-width: 468px) {
+    width: 240px;
+  }
 }
 
 .footer .social-list__item {
@@ -81,14 +121,19 @@
 }
 
 .footer-copy {
-  padding-top: 48px;
-  padding-bottom: 61px;
+  padding-top: 24px;
+  padding-bottom: 30px;
   border-top: 1px solid var(--footer-line-color);
   text-align: center;
 
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.29;
   text-align: center;
 
   color: var(--footer-copy-color);
+  @media screen and(min-width: 468px) {
+    padding-top: 48px;
+    padding-bottom: 61px;
+    font-size: 14px;
+  }
 }

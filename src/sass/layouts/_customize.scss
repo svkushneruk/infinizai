@@ -5,21 +5,39 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and(max-width: 467px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .customize-content {
-  width: 596px;
+  @media screen and(max-width: 467px) {
+    margin-bottom: 20px;
+  }
+  @media screen and(min-width: 468px) {
+    width: 596px;
+  }
 }
 
 .customize-content__label {
-  margin-bottom: 22px;
+  margin-bottom: 10px;
+  @media screen and(min-width: 468px) {
+    margin-bottom: 22px;
+  }
 }
 
 .customize-content__title {
-  text-align: left;
-  margin-bottom: 38px;
+  text-align: center;
+  margin-bottom: 20px;
+  @media screen and(min-width: 468px) {
+    text-align: left;
+    margin-bottom: 38px;
+  }
 }
 
 .customize-content__text {
-  color: var(--benefits-text-color);
+  font-size: 12px;
+  @media screen and(min-width: 468px) {
+    font-size: 20px;
+  }
 }
