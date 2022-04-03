@@ -1,11 +1,14 @@
 .section-title {
-  font-size: 64px;
+  font-size: 32px;
   line-height: 1.16;
   font-weight: 400;
   text-align: center;
   text-transform: capitalize;
 
   color: var(--white-color);
+  @media screen and(min-width: 468px) {
+    font-size: 64px;
+  }
 }
 
 .section-label {

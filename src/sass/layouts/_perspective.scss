@@ -1,16 +1,26 @@
 .perspective-section {
-  padding-top: 130.42px;
-  padding-bottom: 129.58px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  @media screen and(min-width: 468px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .perspective {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
+  @media screen and(min-width: 468px) {
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .perspective-content {
-  width: 730px;
+  @media screen and(min-width: 468px) {
+    width: 730px;
+  }
 }
 
 .perspective-content__label {
@@ -18,14 +28,23 @@
 }
 
 .perspective__title {
-  width: 684px;
-  text-align: left;
-  margin-bottom: 38px;
+  text-align: center;
+  margin-bottom: 18px;
+  @media screen and(min-width: 468px) {
+    text-align: left;
+    width: 684px;
+    margin-bottom: 38px;
+  }
 }
 
 .perspective__text {
   color: var(--benefits-text-color);
-  margin-bottom: 54px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  @media screen and(min-width: 468px) {
+    font-size: 20px;
+    margin-bottom: 54px;
+  }
 }
 
 .perspective__link {
