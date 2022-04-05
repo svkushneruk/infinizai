@@ -47,13 +47,21 @@
 .hero__icon-title {
   position: absolute;
   top: 118px;
-  right: -70px;
+  left: -70px;
   stroke: #fdd048;
   transform: scale(0.6);
+  @media screen and (min-width: 367px) {
+    top: 75px;
+    left: -5px;
+  }
+  @media screen and (min-width: 398px) {
+    top: 75px;
+    left: -75px;
+  }
   @media screen and (min-width: 480px) {
     transform: scale(1);
     top: 160px;
-    right: 0;
+    left: 215px;
   }
 }
 

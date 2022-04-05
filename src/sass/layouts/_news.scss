@@ -79,6 +79,7 @@
     border-radius: 25px;
     overflow: hidden;
     margin-bottom: 25px;
+    max-width: 648px;
     @media screen and(min-width: 468px) {
       border-radius: 45px;
       overflow: hidden;
@@ -121,6 +122,9 @@
   flex-basis: calc(100% / 1 - 24px);
   margin-left: 12px;
   margin-top: 24px;
+  @media screen and(max-width: 467px) {
+    max-width: 312px;
+  }
   @media screen and(min-width: 468px) {
     flex-basis: calc(100% / 2 - 24px);
     margin-left: 24px;

@@ -9,6 +9,8 @@
   display: flex;
   @media screen and (max-width: 467px) {
     flex-direction: column;
+    max-width: 375px;
+    margin: 0 auto;
   }
 }
 
