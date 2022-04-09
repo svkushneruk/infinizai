@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media screen and(max-width: 467px) {
+  @media screen and(max-width: 768px) {
     flex-direction: column-reverse;
   }
 }
@@ -30,6 +30,9 @@
   text-align: center;
   margin-bottom: 20px;
   @media screen and(min-width: 468px) {
+    margin-bottom: 18px;
+  }
+  @media screen and(min-width: 768px) {
     text-align: left;
     margin-bottom: 38px;
   }
@@ -37,7 +40,11 @@
 
 .customize-content__text {
   font-size: 12px;
+  text-align: center;
   @media screen and(min-width: 468px) {
+    font-size: 13px;
+  }
+  @media screen and(min-width: 768px) {
     font-size: 20px;
   }
 }

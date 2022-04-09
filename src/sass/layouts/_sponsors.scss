@@ -3,6 +3,10 @@
   padding-bottom: 34px;
   background-color: var(--sponsors-section-color);
   @media screen and (min-width: 468px) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  @media screen and (min-width: 768px) {
     padding-top: 128px;
     padding-bottom: 129px;
   }
@@ -24,6 +28,10 @@
 
   color: var(--section-title-color);
   @media screen and (min-width: 468px) {
+    font-size: 36px;
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: 768px) {
     font-size: 48px;
     margin-bottom: 44px;
   }
@@ -35,6 +43,9 @@
   text-align: center;
   color: var(--text-color);
   @media screen and (min-width: 468px) {
+    font-size: 13px;
+  }
+  @media screen and (min-width: 768px) {
     font-size: 16px;
     width: 578px;
   }

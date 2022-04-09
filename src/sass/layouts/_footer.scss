@@ -2,6 +2,9 @@
   padding-top: 34px;
   background-color: var(--footer-bg-color);
   @media screen and(min-width: 468px) {
+    padding-top: 64px;
+  }
+  @media screen and(min-width: 768px) {
     padding-top: 130px;
   }
 }
@@ -13,16 +16,19 @@
   color: var(--hero-text-color);
   margin-bottom: 25px;
   @media screen and(min-width: 468px) {
+    margin-bottom: 25px;
+  }
+  @media screen and(min-width: 768px) {
     flex-direction: row;
     margin-bottom: 49px;
   }
 }
 
 .footer-content__item {
-  @media screen and(min-width: 468px) {
+  @media screen and(min-width: 768px) {
     width: 285px;
   }
-  @media screen and(max-width: 467px) {
+  @media screen and(max-width: 767px) {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -39,6 +45,9 @@
   display: inline-block;
   margin-bottom: 15px;
   @media screen and(min-width: 468px) {
+    margin-bottom: 25px;
+  }
+  @media screen and(min-width: 768px) {
     margin-bottom: 35px;
   }
 }
@@ -46,7 +55,7 @@
 .footer-content__text {
   font-size: 12px;
   line-height: 1.67;
-  @media screen and(min-width: 468px) {
+  @media screen and(min-width: 768px) {
     font-size: 15px;
   }
 }
@@ -59,6 +68,10 @@
   color: var(--white-color);
   margin-bottom: 12px;
   @media screen and(min-width: 468px) {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  @media screen and(min-width: 768px) {
     font-size: 18px;
     margin-bottom: 24px;
   }
@@ -80,12 +93,15 @@
     color: var(--nav-link-hover-color);
   }
   @media screen and(min-width: 468px) {
+    font-size: 14px;
+  }
+  @media screen and(min-width: 768px) {
     font-size: 15px;
   }
 }
 
 .footer-content__social {
-  @media screen and(max-width: 467px) {
+  @media screen and(max-width: 767px) {
     text-align: center;
   }
 }
@@ -94,7 +110,7 @@
   flex-wrap: wrap;
   margin-top: -16px;
   margin-left: -16px;
-  @media screen and(min-width: 468px) {
+  @media screen and(min-width: 768px) {
     width: 240px;
   }
 }
@@ -132,6 +148,11 @@
 
   color: var(--footer-copy-color);
   @media screen and(min-width: 468px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 13px;
+  }
+  @media screen and(min-width: 768px) {
     padding-top: 48px;
     padding-bottom: 61px;
     font-size: 14px;

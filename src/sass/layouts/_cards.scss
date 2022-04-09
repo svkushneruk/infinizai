@@ -7,7 +7,7 @@
 
 .cards-list {
   display: flex;
-  @media screen and (max-width: 467px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
     max-width: 375px;
     margin: 0 auto;
@@ -39,12 +39,18 @@
   text-align: center;
   text-transform: capitalize;
   @media screen and(min-width: 468px) {
+    font-size: 36px;
+  }
+  @media screen and(min-width: 768px) {
     font-size: 48px;
   }
 }
 .cards-list__icon {
   margin-bottom: 15px;
   @media screen and(min-width: 468px) {
+    margin-bottom: 20px;
+  }
+  @media screen and(min-width: 768px) {
     margin-bottom: 30px;
   }
 }

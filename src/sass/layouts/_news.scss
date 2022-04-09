@@ -2,6 +2,10 @@
   padding-top: 34px;
   padding-bottom: 34px;
   @media screen and(min-width: 468px) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  @media screen and(min-width: 768px) {
     padding-top: 130px;
     padding-bottom: 130px;
   }
@@ -18,8 +22,14 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 30px;
   @media screen and(min-width: 468px) {
+    // align-items: flex-end;
+    // flex-direction: row;
+    margin-bottom: 44px;
+  }
+  @media screen and(min-width: 768px) {
     align-items: flex-end;
     flex-direction: row;
     margin-bottom: 64px;
@@ -31,7 +41,10 @@
   @media screen and(max-width: 467px) {
     margin-bottom: 10px;
   }
-  @media screen and(min-width: 468px) {
+  @media screen and(max-width: 767px) {
+    margin-bottom: 20px;
+  }
+  @media screen and(min-width: 768px) {
     width: 50%;
     text-align: left;
   }
@@ -64,7 +77,10 @@
   & .news-list__item-small {
     margin-top: 20px;
   }
-  @media screen and(max-width: 467px) {
+  @media screen and(max-width: 767px) {
+    align-items: center;
+  }
+  @media screen and(max-width: 767px) {
     flex-direction: column;
   }
   @media screen and(min-width: 468px) {
@@ -72,7 +88,7 @@
 }
 
 .news-list__item-big {
-  @media screen and(min-width: 468px) {
+  @media screen and(min-width: 768px) {
     flex-basis: 648px;
   }
   & .news-list__thumb {
@@ -92,6 +108,10 @@
     line-height: 1;
     color: var(--hero-title-color);
     @media screen and(min-width: 468px) {
+      margin-bottom: 18px;
+      font-size: 15px;
+    }
+    @media screen and(min-width: 768px) {
       margin-bottom: 28px;
       font-size: 18px;
     }
@@ -102,6 +122,9 @@
     font-weight: 400;
     text-transform: capitalize;
     @media screen and(min-width: 468px) {
+      font-size: 24px;
+    }
+    @media screen and(min-width: 768px) {
       font-size: 36px;
     }
   }
@@ -146,6 +169,10 @@
     color: var(--hero-title-color);
     @media screen and(min-width: 468px) {
       margin-bottom: 20px;
+      font-size: 14px;
+    }
+    @media screen and(min-width: 768px) {
+      margin-bottom: 20px;
       font-size: 16px;
     }
   }
@@ -155,6 +182,9 @@
     font-weight: 400;
     text-transform: capitalize;
     @media screen and(min-width: 468px) {
+      font-size: 16px;
+    }
+    @media screen and(min-width: 768px) {
       font-size: 23px;
     }
   }

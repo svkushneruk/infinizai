@@ -8,6 +8,10 @@
 }
 
 .header .menu {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    position: absolute;
+    left: 0;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -28,6 +32,12 @@
 
 .header__logo {
   @media screen and (min-width: 480px) {
+    margin-right: 25px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-left: 50px;
+  }
+  @media screen and (min-width: 768px) {
     margin-right: 215px;
   }
 }
@@ -144,15 +154,22 @@
   transition: all 0.25s linear;
   cursor: pointer;
   padding: 4px 14px;
-
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    flex: 1 1 auto;
+  }
   @media screen and (min-width: 480px) {
-    margin-left: 40px;
-    font-size: 18px;
-    padding: 16px 31px;
+    margin-left: 25px;
+    font-size: 14px;
+    padding: 10px 12px;
     &:hover,
     &:active {
       color: var(--nav-link-hover-color);
       border: 1px solid var(--nav-link-hover-color);
     }
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 40px;
+    font-size: 18px;
+    padding: 16px 31px;
   }
 }
